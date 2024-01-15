@@ -17,6 +17,8 @@ use App\Http\Controllers\BlogController;
 //     return view('front.pages.example');
 // });
 
+//initiated git
+
 Route::view('/', 'front.pages.home')->name('home');
 
 Route::get('/article/{any}', [BlogController::class, 'readPost'])->name('read_post');
