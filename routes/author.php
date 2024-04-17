@@ -27,9 +27,6 @@ Route::prefix('author')->name('author.')->group(function(){
         Route::post('/logout', [AuthorController::class, 'logout'])->name('logout');
         Route::view('/author-profile', 'back.pages.author-profile')->name('author-profile');
         Route::post('/change-profile-picture', [AuthorController::class, 'ChangeProfilePicture'])->name('change-profile-picture');
-        
-      
-
 
 
         //Only admin can access
