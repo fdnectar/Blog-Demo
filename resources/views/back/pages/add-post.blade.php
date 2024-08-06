@@ -69,7 +69,7 @@
 
     <script>
 
-        
+
 
         $(function(){
             $('#addPostForm').on('submit', function(e){
@@ -94,6 +94,7 @@
                             $(form)[0].reset();
                             CKEDITOR.instances.post_content.setData('');
                             $('input[name="post_tags"]').amsifySuggestags();
+                            window.location.href = '/author/posts/all-posts';
                             alert('Post added Successfully');
                         } else {
                             alert('something went wrong');

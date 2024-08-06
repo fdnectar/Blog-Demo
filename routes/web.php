@@ -35,5 +35,10 @@ Route::get('/clear-cache', function() {
     // return what you want
 });
 
+Route::get('/symlink', function () {
+    Artisan::call('storage:link');
+});
+
+
 
 

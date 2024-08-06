@@ -68,7 +68,7 @@
     <script src="/ckeditor/ckeditor.js"></script>
 
     <script>
-        
+
         // var textarea = document.getElementById('post_content');
         // CKEditor.replace(textarea);
 
@@ -93,6 +93,7 @@
                     success:function(response) {
                         if(response.code == 1){
                             alert('Post updated Successfully');
+                            window.location.href = '/author/posts/all-posts';
                         } else {
                             alert('something went wrong');
                         }
