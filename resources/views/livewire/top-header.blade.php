@@ -118,7 +118,6 @@
               </a>
               <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                 <a href="{{route('author.author-profile')}}" class="dropdown-item">Profile</a>
-                <a href="./settings.html" class="dropdown-item">Settings</a>
                 <a href="{{route('author.logout')}}" class="dropdown-item" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
                 <form action="{{route('author.logout')}}" id="logout-form" method="post">@csrf</form>
               </div>
@@ -138,7 +137,7 @@
                   </a>
                 </li>
                 @if(auth()->user()->type == 1)
-                  <li class="nav-item">
+                  {{-- <li class="nav-item">
                     <a class="nav-link" href="{{ route('author.authors') }}" >
                       <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-license" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 21h-9a3 3 0 0 1 -3 -3v-1h10v2a2 2 0 0 0 4 0v-14a2 2 0 1 1 2 2h-2m2 -4h-11a3 3 0 0 0 -3 3v11" /><path d="M9 7l4 0" /><path d="M9 11l4 0" /></svg>
@@ -147,7 +146,7 @@
                         Authors
                       </span>
                     </a>
-                  </li>
+                  </li> --}}
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('author.categories') }}" >
                       <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
@@ -181,7 +180,7 @@
                     </div>
                   </div>
                 </li>
-                @if(auth()->user()->type == 1)
+                {{-- @if(auth()->user()->type == 1)
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
                     <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
@@ -201,7 +200,7 @@
                     </div>
                   </div>
                 </li>
-                @endif
+                @endif --}}
               </ul>
             </div>
           </div>
