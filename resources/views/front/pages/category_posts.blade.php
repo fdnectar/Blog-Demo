@@ -44,7 +44,7 @@
     <div class="col-lg-4">
         <div class="widget-blocks">
             <div class="row">
-                <div class="col-lg-12">
+                {{-- <div class="col-lg-12">
                     <div class="widget">
                         <div class="widget-body">
                             <img loading="lazy" decoding="async" src="/front/images/author.jpg" alt="About Me" class="w-100 author-thumb-sm d-block">
@@ -53,7 +53,7 @@
                             More</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 @if(sidebar_latest_post())
                     <div class="col-lg-12 col-md-6">
                         <div class="widget">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 @endif
-                
+
                 @if(categories())
                     <div class="col-lg-12 col-md-6">
                         <div class="widget">
@@ -91,10 +91,10 @@
                 @endif
 
                 @if(all_tags() != null)
-                    @php 
+                    @php
                         $allTagsString = all_tags();
                         $allTagsArray = explode(',',$allTagsString)
-                    @endphp    
+                    @endphp
                     <div class="col-lg-12 col-md-6">
                         <div class="widget">
                             <h2 class="section-title mb-3">Post Tags</h2>
@@ -104,7 +104,7 @@
                                         <li><a href="{{ route('tag_posts', $tag) }}">#{{ $tag }}</a></li>
                                     @endforeach
                                 </ul>
-                            </div>                                                                      
+                            </div>
                         </div>
                     </div>
                 @endif

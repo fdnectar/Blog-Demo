@@ -19,12 +19,16 @@ use App\Http\Controllers\BlogController;
 
 //initiated git
 
-Route::view('/', 'front.pages.home')->name('home');
+Route::get('/', function () {
+    return view('amazon-seller');
+});
 
-Route::get('/article/{any}', [BlogController::class, 'readPost'])->name('read_post');
-Route::get('/category/{any}', [BlogController::class, 'categoryPosts'])->name('category_posts');
-Route::get('/post/tag/{any}', [BlogController::class, 'tagPosts'])->name('tag_posts');
-Route::get('/search', [BlogController::class, 'searchBlog'])->name('search_posts');
+Route::view('/blogs', 'front.pages.home')->name('home');
+
+Route::get('/blogs/article/{any}', [BlogController::class, 'readPost'])->name('read_post');
+Route::get('/blogs/category/{any}', [BlogController::class, 'categoryPosts'])->name('category_posts');
+Route::get('/blogs/post/tag/{any}', [BlogController::class, 'tagPosts'])->name('tag_posts');
+Route::get('/blogs/search', [BlogController::class, 'searchBlog'])->name('search_posts');
 
 
 

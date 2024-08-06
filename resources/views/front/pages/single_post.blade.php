@@ -80,12 +80,12 @@
                     /**
                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                    
+
                     var disqus_config = function () {
                     this.page.url = "{{ route('read_post', $post->post_slug) }}";  // Replace PAGE_URL with your page's canonical URL variable
                     this.page.identifier = "{{ $post->id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                     };
-                    
+
                     (function() { // DON'T EDIT BELOW THIS LINE
                     var d = document, s = d.createElement('script');
                     s.src = 'https://blog-demo-6.disqus.com/embed.js';
@@ -99,7 +99,7 @@
     <div class="col-lg-4">
         <div class="widget-blocks">
             <div class="row">
-                <div class="col-lg-12">
+                {{-- <div class="col-lg-12">
                     <div class="widget">
                         <div class="widget-body">
                             <img loading="lazy" decoding="async" src="/front/images/author.jpg" alt="About Me" class="w-100 author-thumb-sm d-block">
@@ -108,7 +108,7 @@
                             More</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 @if(sidebar_latest_post())
                     <div class="col-lg-12 col-md-6">
                         <div class="widget">
@@ -139,16 +139,16 @@
                                         <li><a href="{{ route('category_posts', $value->slug) }}">{{ Str::ucfirst($value->sub_category_name) }} <span class="ml-auto">({{ $value->posts->count() }})</span></a></li>
                                     @endforeach
                                 </ul>
-                            </div>                                                                      
+                            </div>
                         </div>
                     </div>
                 @endif
 
                 @if(all_tags() != null)
-                    @php 
+                    @php
                         $allTagsString = all_tags();
                         $allTagsArray = explode(',',$allTagsString)
-                    @endphp    
+                    @endphp
                     <div class="col-lg-12 col-md-6">
                         <div class="widget">
                             <h2 class="section-title mb-3">Post Tags</h2>
@@ -158,11 +158,11 @@
                                         <li><a href="{{ route('tag_posts', $tag) }}">#{{ $tag }}</a></li>
                                     @endforeach
                                 </ul>
-                            </div>                                                                      
+                            </div>
                         </div>
                     </div>
                 @endif
-                
+
             </div>
         </div>
     </div>

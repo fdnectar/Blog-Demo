@@ -1,6 +1,6 @@
 @extends('front.layouts.pages-layout')
 
-@section('pageTitle', isset($pageTitle) ? $pageTitle : 'Welcome to Blog Demo')
+@section('pageTitle', isset($pageTitle) ? $pageTitle : 'Welcome to Nexon Digi')
 @section('meta_tags')
     <meta name="robots" content="index,follow"/>
     <meta name="title" content="{{ blogInfo()->blog_name }}"/>
@@ -74,7 +74,7 @@
         <div class="col-lg-4">
             <div class="widget-blocks">
                 <div class="row">
-                    <div class="col-lg-12">
+                    {{-- <div class="col-lg-12">
                         <div class="widget">
                             <div class="widget-body">
                                 <img loading="lazy" decoding="async" src="/front/images/author.jpg" alt="About Me" class="w-100 author-thumb-sm d-block">
@@ -83,7 +83,7 @@
                                 <a href="about.html" class="btn btn-sm btn-outline-primary">Know More</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     @if(recommended_post())
                         <div class="col-lg-12 col-md-6">
                             <div class="widget">
@@ -115,7 +115,7 @@
                                             <li><a href="{{ route('category_posts', $value->slug) }}">{{ Str::ucfirst($value->sub_category_name) }} <span class="ml-auto">({{ $value->posts->count() }})</span></a></li>
                                         @endforeach
                                     </ul>
-                                </div>                                                                      
+                                </div>
                             </div>
                         </div>
                     @endif

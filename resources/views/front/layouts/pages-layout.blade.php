@@ -6,8 +6,8 @@
 	<title>@yield('pageTitle')</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	@yield('meta_tags')
-	<link rel="shortcut icon" href="/front/images/favicon.png" type="image/x-icon">
-	<link rel="icon" href="/front/images/favicon.png" type="image/x-icon">
+	{{-- <link rel="shortcut icon" href="/front/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="/front/images/favicon.png" type="image/x-icon"> --}}
   
     <!-- theme meta -->
     <meta name="theme-name" content="reporter" />
@@ -36,7 +36,7 @@
     </main>
 
     @include('front.layouts.inc.footer')
-    
+
     <!-- # JS Plugins -->
     <script src="/front/plugins/jquery/jquery.min.js"></script>
     <script src="/front/plugins/bootstrap/bootstrap.min.js"></script>
