@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg navbar-light px-0">
             <a class="navbar-brand order-1 py-0" href="{{ route('home') }}">
                 <!-- <img loading="prelaod" decoding="async" class="img-fluid" src="/front/images/logo.png" alt="Reporter Hugo"> -->
-                <h2>NexonDigi</h2>
+                <h2>Seller-in-Usa</h2>
             </a>
             <div class="navbar-actions order-3 ml-0 ml-md-4">
                 <button aria-label="navbar toggler" class="navbar-toggler border-0" type="button" data-toggle="collapse"

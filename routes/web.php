@@ -30,5 +30,10 @@ Route::get('/blogs/category/{any}', [BlogController::class, 'categoryPosts'])->n
 Route::get('/blogs/post/tag/{any}', [BlogController::class, 'tagPosts'])->name('tag_posts');
 Route::get('/blogs/search', [BlogController::class, 'searchBlog'])->name('search_posts');
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('optimize:clear');
+    // return what you want
+});
+
 
 

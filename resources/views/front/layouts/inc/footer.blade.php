@@ -4,7 +4,7 @@
             <div class="col-lg-10 mx-auto text-center">
                 <a class="d-inline-block mb-4 pb-2" href="index.html">
                     <!-- <img loading="prelaod" decoding="async" class="img-fluid" src="/front/images/logo-white.png" alt="Reporter Hugo"> -->
-                    <h2 class="text-white">NexonDigi</h2>
+                    <h2 class="text-white">Seller-in-Usa</h2>
                 </a>
                 {{-- <ul class="p-0 d-flex navbar-footer mb-0 list-unstyled">
                     <li class="nav-item my-0"> <a class="nav-link" href="about.html">About</a></li>
@@ -16,5 +16,5 @@
             </div>
         </div>
     </div>
-    <div class="copyright bg-dark content">&copy; <script>document.write(new Date().getFullYear())</script> Designed &amp; Developed By <a href="#">NexonDigi</a></div>
+    <div class="copyright bg-dark content">&copy; <script>document.write(new Date().getFullYear())</script> Designed &amp; Developed By <a href="#">SellerInUsa</a></div>
 </footer>

@@ -1,6 +1,6 @@
 @extends('front.layouts.pages-layout')
 
-@section('pageTitle', isset($pageTitle) ? $pageTitle : 'Welcome to Nexon Digi')
+@section('pageTitle', isset($pageTitle) ? $pageTitle : 'Welcome to Our Blogs')
 @section('meta_tags')
     <meta name="robots" content="index,follow"/>
     <meta name="title" content="{{ blogInfo()->blog_name }}"/>
